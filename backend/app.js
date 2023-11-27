@@ -8,6 +8,8 @@ const dotenv = require("dotenv");
 
 if (process.env.NODE_ENV !== 'PRODUCTION') {
     dotenv.config({path: "backend/config.env"});
+} else {
+    dotenv.config({path: "backend/config.env"});
 }
 
 const path = require('path');
